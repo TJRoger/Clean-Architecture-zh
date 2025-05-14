@@ -3,6 +3,7 @@
 《架构整洁之道》中文翻译
 
 在线阅读：[http://gdut_yy.gitee.io/doc-cleanarch/](http://gdut_yy.gitee.io/doc-cleanarch/)
+
 GitHub Pages：[https://tjroger.github.io/Clean-Architecture-zh/](https://tjroger.github.io/Clean-Architecture-zh/)
 
 <img src="./docs/cover.jpg" width=24% />
@@ -50,7 +51,7 @@ GitHub Pages：[https://tjroger.github.io/Clean-Architecture-zh/](https://tjroge
 - [第 20 章 业务逻辑](docs/ch20.md)
 - [第 21 章 尖叫的软件架构](docs/ch21.md)
 - [第 22 章 整洁架构](docs/ch22.md)
-- [第 23 章 展示器和谦卑对象](docs/ch23.md)
+- [第 23 章 展示器和精简对象](docs/ch23.md)
 - [第 24 章 不完全边界](docs/ch24.md)
 - [第 25 章 层次与边界](docs/ch25.md)
 - [第 26 章 Main 组件](docs/ch26.md)
@@ -110,18 +111,18 @@ yarn install
 yarn docs:dev
 
 # 访问本地开发环境
-http://localhost:8080/doc-cleanarch/
+http://localhost:8080/Clean-Architecture-zh/
 ```
 
 ### 构建部署
 
 #### 自动部署（推荐）
 
-本项目配置了 GitHub Actions 自动化部署，当您推送代码到 `main` 分支时，会自动构建并部署到 GitHub Pages。
+本项目配置了 GitHub Actions 自动化部署，当您推送代码到 `master` 分支时，会自动构建并部署到 GitHub Pages。
 
 1. Fork 本仓库
 2. 在仓库设置中启用 GitHub Pages（选择 gh-pages 分支）
-3. 推送代码到 main 分支即可自动部署
+3. 推送代码到 master 分支即可自动部署
 
 #### 手动部署到 GitHub Pages
 
@@ -148,4 +149,4 @@ http://localhost:8080/doc-cleanarch/
 
 ## License
 
-[MIT](https://github.com/gdut-yy/Clean-Architecture-zh/blob/master/LICENSE)
+[MIT](https://github.com/tjroger/Clean-Architecture-zh/blob/master/LICENSE)
