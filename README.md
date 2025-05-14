@@ -3,6 +3,7 @@
 《架构整洁之道》中文翻译
 
 在线阅读：[http://gdut_yy.gitee.io/doc-cleanarch/](http://gdut_yy.gitee.io/doc-cleanarch/)
+GitHub Pages：[https://tjroger.github.io/Clean-Architecture-zh/](https://tjroger.github.io/Clean-Architecture-zh/)
 
 <img src="./docs/cover.jpg" width=24% />
 
@@ -70,20 +71,71 @@
 
 本项目基于 vuepress 进行开发，以提供比 github mardown 更佳的阅读体验
 
-依赖于 `node.js`、`yarn`、`vuepress` 等环境
+### 环境要求
+
+- Node.js v16.x (推荐使用 nvm 管理 Node.js 版本)
+- Yarn 包管理器
+- Git
+
+### 安装步骤
+
+1. 安装 Node.js v16
+```sh
+# 使用 nvm 安装 Node.js v16
+nvm install 16
+nvm use 16
+```
+
+2. 安装 Yarn
+```sh
+# 使用 npm 安装 Yarn
+npm install -g yarn
+```
+
+3. 克隆项目
+```sh
+git clone https://github.com/tjroger/Clean-Architecture-zh.git
+cd Clean-Architecture-zh/
+```
+
+4. 安装依赖
+```sh
+yarn install
+```
+
+### 本地开发
 
 ```sh
-# vuepress
-yarn global add vuepress
-
-# 本地开发
-git clone https://github.com/gdut-yy/Clean-Architecture-zh.git
-cd Clean-Architecture-zh/
+# 启动开发服务器
 yarn docs:dev
 
-# 本地阅读
+# 访问本地开发环境
 http://localhost:8080/doc-cleanarch/
 ```
+
+### 构建部署
+
+#### 部署到 GitHub Pages
+
+1. 确保已经配置好 GitHub SSH 密钥
+2. 运行部署脚本
+```sh
+./github-deploy.sh
+```
+
+#### 部署到 Gitee Pages
+
+1. 确保已经配置好 Gitee SSH 密钥
+2. 运行部署脚本
+```sh
+./gitee-deploy.sh
+```
+
+### 常见问题
+
+1. 如果遇到 OpenSSL 相关错误，请确保使用 Node.js v16
+2. 如果遇到权限问题，请检查 SSH 密钥配置
+3. 部署后可能需要等待几分钟才能在 Pages 上看到更新
 
 ## License
 
