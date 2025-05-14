@@ -1,9 +1,18 @@
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean": "rimraf docs/.vuepress/dist",
+    "docs:deploy": "bash github-deploy.sh"
   },
   "dependencies": {
     "vuepress": "^1.8.2"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "rimraf": "^3.0.2"
   }
 }

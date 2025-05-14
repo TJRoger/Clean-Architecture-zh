@@ -2,8 +2,20 @@
 module.exports = {
   // 网站的标题
   title: "Clean Architecture 中文",
+  description: 'Clean Architecture 中文翻译',
   // 上下文根
   base: "/Clean-Architecture-zh/",
+  plugins: [
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
+    '@vuepress/nprogress',
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-PVY9TTY7YB' // 替换为您的 Google Analytics ID
+      }
+    ]
+  ],
   themeConfig: {
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: "tjroger/Clean-Architecture-zh",
@@ -24,7 +36,10 @@ module.exports = {
     // 最大深度
     sidebarDepth: 2,
     // 导航栏
-    nav: [],
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '代码整洁之道', link: 'https://github.com/TJRoger/Clean-Architecture-zh' }
+    ],
     // 侧边栏
     sidebar: {
       "/": [
