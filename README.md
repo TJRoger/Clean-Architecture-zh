@@ -115,7 +115,15 @@ http://localhost:8080/doc-cleanarch/
 
 ### 构建部署
 
-#### 部署到 GitHub Pages
+#### 自动部署（推荐）
+
+本项目配置了 GitHub Actions 自动化部署，当您推送代码到 `main` 分支时，会自动构建并部署到 GitHub Pages。
+
+1. Fork 本仓库
+2. 在仓库设置中启用 GitHub Pages（选择 gh-pages 分支）
+3. 推送代码到 main 分支即可自动部署
+
+#### 手动部署到 GitHub Pages
 
 1. 确保已经配置好 GitHub SSH 密钥
 2. 运行部署脚本
@@ -136,6 +144,7 @@ http://localhost:8080/doc-cleanarch/
 1. 如果遇到 OpenSSL 相关错误，请确保使用 Node.js v16
 2. 如果遇到权限问题，请检查 SSH 密钥配置
 3. 部署后可能需要等待几分钟才能在 Pages 上看到更新
+4. 如果自动部署失败，请检查 GitHub Actions 日志
 
 ## License
 
