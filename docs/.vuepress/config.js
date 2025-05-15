@@ -38,7 +38,7 @@ module.exports = {
     // 导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '代码整洁之道', link: 'https://github.com/TJRoger/Clean-Architecture-zh' }
+      { text: '架构整洁之道', link: 'https://github.com/TJRoger/Clean-Architecture-zh' }
     ],
     // 侧边栏
     sidebar: {
