@@ -1,6 +1,6 @@
 # Chap9. LSP: THE LISKOV SUBSTITUTION PRINCIPLE LSP：里氏替换原则
 
-![](./un/CH-UN09.jpg)
+![图 9-1：里氏替换原则](./un/CH-UN09.jpg)
 
 In 1988, Barbara Liskov wrote the following as a way of defining subtypes.
 

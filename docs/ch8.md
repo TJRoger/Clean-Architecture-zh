@@ -1,6 +1,6 @@
 # Chap8. OCP: THE OPEN-CLOSED PRINCIPLE OCP：开闭原则
 
-![](./un/CH-UN08.jpg)
+![图 8-1：开闭原则](./un/CH-UN08.jpg)
 
 The Open-Closed Principle (OCP) was coined in 1988 by Bertrand Meyer.1 It says:
 
